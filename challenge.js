@@ -3,7 +3,7 @@ function changeBackgroundColor () {
   var rgb = [];
   for (var i = 0; i < 3; i++) {
     rgb.push(Math.floor(Math.random() * 255));
-    main.style.backgroundColor = 'rgb(' + rgb.join(',') + ')'; 
+    main.style.backgroundColor = `rgb(${rgb}.join(', '))`; 
   }
   console.log(`Main's background color is rgb(${rgb})`);
 }
