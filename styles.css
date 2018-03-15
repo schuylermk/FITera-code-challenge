@@ -13,7 +13,7 @@ main {
 }
 
 .rect {
-  background-color: darkmagenta;
+  background-color: rgb(71, 71, 71);
   border-radius: 1px;
   height: 100%;
   margin-left: 2rem;
@@ -58,9 +58,6 @@ main {
   border: 6px solid rgb(116, 116, 116);
 }
 
-
-
-
 .card-bdy {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -71,6 +68,10 @@ main {
 .card-text {
   font-size: var(--card-ptext-size);
   line-height: calc(1.25 * var(--card-ptext-line-height));
+}
+
+.card-text.toggled {
+  font-size: calc(1.75 * var(--card-ptext-size));
 }
 
 .calc {
