@@ -1,3 +1,5 @@
+/*                         */
+/* Change Background Color */
 function changeBackgroundColor () {
   var main = document.querySelector('main');
   var rgb = [];
@@ -7,12 +9,13 @@ function changeBackgroundColor () {
   }
   console.log(`Main's background color is rgb(${rgb})`);
 }
+
 function removeBgColor() {
   var main = document.querySelector('main');
   main.style.backgroundColor = '';
 }
 
-
+/* Change Text Size */
 let textToggle = document.getElementById('changeTextSize');
 let theText = document.querySelectorAll('.card-text');
 
@@ -22,6 +25,7 @@ textToggle.onclick = () => {
   }
 }
 
+/* Calculator */
 function doMath() {
   var num1 = parseInt(document.getElementById('firstNumber').value),
       num2 = parseInt(document.getElementById('secondNumber').value),
