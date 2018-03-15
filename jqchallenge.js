@@ -9,7 +9,10 @@ $("button#borderColor").click(function() {
   ];
   var newRandomClass = borderClasses[Math.floor(Math.random() * borderClasses.length)];
   
-  $(".change").removeClass("border-red border-blue border-green border-yellow border-purple border-dark")
-              .addClass(newRandomClass);
-  console.log(newRandomClass)
+  $(".change").removeClass("border-red border-blue border-green border-yellow border-purple border-dark").addClass(newRandomClass);
+  console.log(newRandomClass);
+  
+  $("#removeBorderColor").click(function () {
+    $(".change").removeClass(newRandomClass)
+  });
 });
