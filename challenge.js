@@ -12,12 +12,22 @@ function removeBgColor() {
   main.style.backgroundColor = '';
 }
 
+
+let textToggle = document.getElementById('changeTextSize');
+let theText = document.querySelectorAll('.card-text');
+
+textToggle.onclick = () => {
+  for (let x of theText) {
+    x.classList.toggle('toggled');
+  }
+}
+
 function doMath() {
   var num1 = parseInt(document.getElementById('firstNumber').value),
-  num2 = parseInt(document.getElementById('secondNumber').value),
-  choice = document.getElementById('math').value,
-  result = document.getElementById('result');
-  
+      num2 = parseInt(document.getElementById('secondNumber').value),
+    choice = document.getElementById('math').value,
+    result = document.getElementById('result')
+
   if (choice === 'add') {
     result.value = ` = ${num1 + num2}`;
   } 
