@@ -85,16 +85,15 @@ main {
 }
 
 #math {
-  border: 1px solid rgba(30, 143, 255, 0.8);
+  border: 2px solid rgba(30, 143, 255, 0.8);
 }
 
 .calculator {
-  margin-left: 2rem;
   border-radius: 0.25rem 0 0 0.25rem;
+  margin-left: 2rem;
 }
 
 .result {
   border: 1px solid #28a745;
-  border-radius: 0.1rem;
-  /* padding-left: 1rem; */
+  border-radius: 0 0.25rem 0.25rem 0;
 }

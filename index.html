@@ -66,8 +66,8 @@
                 <p class="font-weight-normal text-left">Perform math on any 2 numbers by selecting an operation from the dropdown menu and clicking <span onclick="doMath();">'Result'</span> to
                     the right.</p>
 
-                <div class="input-group d-flex justify-content-md-center container">
-                    <operands class="d-flex flex-row">
+                <div class="d-flex flex-row justify-content-center container">
+                    <operands class="d-flex">
                         <input type="text" id="firstNumber" class="btn operand" aria-label="Number input with segmented dropdown button">
                         <div class="input-group-append">
                             <select id="math" class="btn btn-light">
@@ -80,8 +80,8 @@
                         <input type="text" id="secondNumber" class="btn operand" aria-label="Text input with segmented dropdown button">
                     </operands>
 
-                    <div class="input-group-prepend calculator">
-                        <button onclick="doMath();" class="btn btn-success">Result</button>
+                    <div class="input-group-prepend d-flex">
+                        <button onclick="doMath();" class="calculator btn btn-success">Result</button>
                         <input type="text" id="result" class="result" placeholder=" = (Answer)" aria-label="Text showing calculation result">
                     </div>
                 </div>
