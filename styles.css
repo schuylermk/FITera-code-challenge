@@ -1,6 +1,6 @@
 :root {
   --bg:rgb(235, 255, 235);
-  --card-ptext-size: 12px;
+  --card-ptext-size: 16px;
   /* --card-ptext-line-height: calc(1.4*--card-ptext-size); */
 }
 
@@ -40,22 +40,22 @@ main {
 }
 
 .border-red {
-  border: 6px solid rgb(255, 16, 16);
+  border: 0.35rem solid rgb(255, 16, 16);
 }
 .border-blue {
-  border: 6px solid rgb(20, 36, 250);
+  border: 0.35rem solid rgb(20, 36, 250);
 }
 .border-green {
-  border: 6px solid rgb(125, 175, 30);
+  border: 0.35rem solid rgb(125, 175, 30);
 }
 .border-yellow {
-  border: 6px solid rgb(225, 220, 0);
+  border: 0.35rem solid rgb(225, 220, 0);
 }
 .border-purple {
-  border: 6px solid rgb(150, 0, 180);
+  border: 0.35rem solid rgb(150, 0, 180);
 }
 .border-dark {
-  border: 6px solid rgb(116, 116, 116);
+  border: 0.35rem solid rgb(116, 116, 116);
 }
 
 .card-bdy {
@@ -71,7 +71,7 @@ main {
 }
 
 .card-text.toggled {
-  font-size: calc(1.75 * var(--card-ptext-size));
+  font-size: calc(1.5 * var(--card-ptext-size));
 }
 
 .calc {
