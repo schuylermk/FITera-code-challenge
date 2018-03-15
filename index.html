@@ -6,21 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
     <title>FITera Code Challenge</title>
 </head>
 
 <body>
-    <header>
-        <h1>FITera Code Challenge</h1>
-        <h3>Demonstration of </h3>
-    </header>    
-    
+    <main role="main">
+        <header class="jumbotron" style="border-radius: unset;">
+            <div class="container">
+                <h1 class="display-2">FITera Code Challenge</h1>
+                <h3 class="lead">Demonstration of using js/jQuery to adjust classes to change component appearance and perform math on input</h3>
+            </div>
+        </header>
 
+        <article class="container">
+            <div class="dummy row">
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, assumenda inventore nesciunt dignissimos,
+                        porro consequatur a tempore voluptas labore voluptates ab earum, vel dolore. Odio ad obcaecati molestias
+                        fugit molestiae.</p>
+                </div>
+                <div class="col">
+                    <div class="rect"></div>
+                </div>
+        </article>
+        <hr class="container">
+
+        <section class="d-flex justify-content-center container">
+            <div class="change">
+                <div class="card-bdy">
+                    <h2>Card #1</h2>
+                    <p class="card-text lead">Change background color.</p>
+                    <button onclick="changeBackgroundColor();" id="bgColor" type="button" class="btn btn-primary">Change background color</button>
+                    <button onclick="removeBgColor();" title="Remove background color" class="close" aria-label="Close"><span style="color: red;" aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
+            <div class="change">
+                <div class="card-bdy">
+                    <h2>Card #2</h2>
+                    <p class="card-text lead">Change border color.</p>
+                    <button id="borderColor" type="button" class="btn btn-primary">Change border color</button>
+                    <button onclick="removeBorderColor();" title="Remove border color" class="close" aria-label="Close"><span style="color: red;" aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
+            <div class="change">
+                <div class="card-bdy">
+                    <h2>Card #3</h2>
+                    <p class="card-text lead">Change text size.</p>
+                    <button id="textSize" type="button" class="btn btn-primary">Change text size</button>
+                </div>
+            </div>
+        </section>
+        <hr class="container">
+
+        <section class="container calc">
+            <div>
+                <h2>Simple Calculator</h2>
+                <p class="font-weight-normal text-left">Perform math on any 2 numbers by selecting an operation from the dropdown menu and clicking <span onclick="doMath();">'Result'</span> to
+                    the right.</p>
+
+                <div class="input-group d-flex justify-content-center container">
+                    <input type="text" id="firstNumber" class="btn operand" aria-label="Number input with segmented dropdown button">
+                    
+                    <div class="input-group-append">
+                        <select id="math" class="btn btn-light">
+                            <option value="add">+ (plus)</option>
+                            <option value="subtract">− (minus)</option>
+                            <option value="multiply">× (multiplied by)</option>
+                            <option value="divide">÷ (divided by)</option>
+                        </select>
+                    </div>
+
+                    <input type="text" id="secondNumber" class="btn operand" aria-label="Text input with segmented dropdown button">
+
+                    <div class="input-group-prepend calculator">
+                        <button onclick="doMath();" class="btn btn-success">Result</button>
+                        <input type="text" id="result" class="result" placeholder=" = (Answer)" aria-label="Text showing calculation result">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-
+    <script src="challenge.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
